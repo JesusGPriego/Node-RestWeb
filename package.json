@@ -1,0 +1,26 @@
+{
+  "name": "ts-node-base-project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "tsnd --respawn -r tsconfig-paths/register --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Suleware",
+  "license": "ISC",
+  "description": "base project for further developments",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  }
+}
