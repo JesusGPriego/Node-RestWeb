@@ -1,6 +1,6 @@
 ## Description
 
-base node.js configured with ts-node
+Rest web server
 
 ### Scripts
 
