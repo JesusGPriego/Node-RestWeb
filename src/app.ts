@@ -1,3 +1,11 @@
-import { sampleFunction } from '@/utils/sampleFunction';
+import { Server } from "@/presentation/server";
+import { envs } from "@/configs/envs";
 
-console.log('sampleFunction', sampleFunction());
+(() => {
+  main();
+})();
+
+function main() {
+  const server = new Server(envs);
+  server.start();
+}
