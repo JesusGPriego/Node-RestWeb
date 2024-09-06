@@ -2,11 +2,19 @@
 
 Rest web server
 
-### Scripts
+### How to use
 
+create .env file from .env.template and set values.
+
+run
 
 ```
-  "dev": "tsnd --respawn -r tsconfig-paths/register --clear src/app.ts",
-  "build": "rimraf ./dist && tsc",
-  "start": "npm run build && node dist/app.js"
+npm install
+```
+
+### Scripts
+
+```
+  npm run dev
+  npm run test
 ```
