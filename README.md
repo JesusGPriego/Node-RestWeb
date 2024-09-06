@@ -6,8 +6,13 @@ Rest web server
 
 create .env file from .env.template and set values.
 
-### Scripts
+run
 
+```
+npm install
+```
+
+### Scripts
 
 ```
   npm run dev
