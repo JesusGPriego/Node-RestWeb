@@ -4,9 +4,10 @@
   "main": "app.js",
   "scripts": {
     "dev": "tsnd --env-file=.env --respawn -r tsconfig-paths/register --clear src/app.ts",
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node dist/app.js",
-    "test": "jest"
+    "build": "rimraf ./dist && tsc --project tsconfig.build.json",
+    "start": "node ./dist/src/app.js",
+    "test": "jest",
+    "build:test": "node ./dist/src/app.js"
   },
   "keywords": [],
   "author": "Suleware",
@@ -31,6 +32,6 @@
     "express": "^4.19.2"
   },
   "_moduleAliases": {
-    "@": "./dist"
+    "@": "./dist/src"
   }
 }
