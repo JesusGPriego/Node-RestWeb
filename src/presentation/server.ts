@@ -1,3 +1,4 @@
+import { envs } from "@/configs/envs";
 import express from "express";
 import path from "path";
 
@@ -18,10 +19,11 @@ export class Server {
   async start() {
     // middlewares
     this.app.use(express.static(this.publicPath));
-
+    
     this.app.get("*", (req, res) => {
+      console.log("ENVS ->\n", envs);
       const indexPath = path.join(
-        __dirname + `../../../${this.publicPath}/index.html`
+        __dirname + `../../../../${this.publicPath}/index.html`
       );
       res.sendFile(indexPath);
     });
