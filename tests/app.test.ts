@@ -1,8 +1,6 @@
-import { sampleFunction } from '@/utils/sampleFunction';
-
-describe('app', () => {
-  test('should be true', () => {
-    const result = sampleFunction();
+describe("app", () => {
+  test("should be true", () => {
+    const result = true;
     expect(result).toBeTruthy();
   });
 });

@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import { Server } from "@/presentation/server";
 import { envs } from "@/configs/envs";
 
