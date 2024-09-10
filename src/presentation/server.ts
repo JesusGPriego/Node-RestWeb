@@ -1,4 +1,3 @@
-import { envs } from "@/configs/envs";
 import express from "express";
 import path from "path";
 
