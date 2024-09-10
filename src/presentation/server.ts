@@ -27,7 +27,7 @@ export class Server {
     });
 
     this.app.listen(this.port, () => {
-      console.log(`port is listening on port ${this.port}`);
+      console.log(`server is listening on port ${this.port}`);
     });
   }
 }
